@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    
+  </head>
+  <body>
+      <p>The script uses your mic input frequency and volume to change the hue and brightness of the color lines respectively.
+        <br>Each mic is different, so you can use the sliders to adjust the sensitivity to your liking. (may not work on some cell phones)
+        <br>Right click to save your creation!</p>
+      <p id="position">hey</p>
+      <div class="slidecontainer">
+        <p>Volume Multiplier (Controls Brightness): <span id="volSlideNum"></span></p>
+        <input type="range" min="1" max="50000" value="20000" class="slider" id="volume">
+      </div>
+      <div class="slidecontainer">
+        <p>Frequency Multiplier (Contols Hue): <span id="freqSlideNum"></span></p>
+        <input type="range" min="1" max="20" value="3" class="slider" id="frequency">
+      </div>
+      <button onclick="stop++;">Stop Recording</button>
+      <button onclick="location.reload();">Restart</button>
+      
+      
+  </body>
+  <script src="sliders.js"></script>
+    <script src="p5.js"></script>
+    <!--<script src="p5.dom.js"></script>-->
+    <script src="p5.sound.js"></script>
+    <script src="sketch.js"></script>
+</html>

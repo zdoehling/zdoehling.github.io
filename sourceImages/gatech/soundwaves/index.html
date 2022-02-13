@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <link rel="stylesheet" href="soundCSS.css">
+  </head>
+  <body>
+      <div id="overlay">
+        <div id="info">
+          <p>The script uses your mic input frequency and volume to change the hue and brightness of the color lines respectively.</p>
+            <p>Use the controls panel to download your creation, adjust the sensitivity to your liking, or refresh the page if bars don't automatically draw.</p>
+            <button id="start" onclick="startCheck(); off();">Start</button>
+        </div>
+      </div>
+      <div id="controls">
+        <button id="showControls" onclick="controlCheck();" style="float: none;">Show Controls</button>
+        <div id="innerControl">
+          <p id="position" style="display: none; color: white;"></p>
+          <div class="slidecontainer">
+              <p>Volume Multiplier (Controls Brightness): <span id="volSlideNum"></span></p>
+              <input type="range" min="1" max="50000" value="20000" class="slider" id="volume">
+            </div>
+            <div class="slidecontainer">
+              <p>Frequency Multiplier (Contols Hue): <span id="freqSlideNum"></span></p>
+              <input type="range" min="1" max="20" value="3" class="slider" id="frequency">
+            </div>
+            <div>
+              <button id="pauseButton" onclick="startCheck();">Start Recording</button>
+            </div>
+            <button onclick="location.reload();">Refresh</button>
+            <button onclick="calibrate();">Calibrate</button>
+            <button onclick="save();">Download Your Canvas</button>
+        </div>
+      </div>
+    <div id="container">
+    </div>
+      
+  </body>
+  <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+      
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+      function controlCheck(){
+        if(controls == 0){
+          document.getElementById("showControls").innerHTML = 'Hide Controls';
+          document.getElementById("innerControl").style.display = "block";
+          controls = 1;
+        } else{
+          document.getElementById("showControls").innerHTML = 'Show Controls';
+          document.getElementById("innerControl").style.display = "none";
+          controls = 0;
+        }
+      }
+  </script>
+
+  <script src="sliders.js"></script>
+    <script src="p5.js"></script>
+    <!--<script src="p5.dom.js"></script>-->
+    <script src="p5.sound.js"></script>
+    <script src="sketch.js"></script>
+</html>
