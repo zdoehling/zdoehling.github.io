@@ -1,0 +1,475 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Martel');
+
+@keyframes fadeInFromLeft{
+	0%{
+		transform: translateX(-10%);
+		opacity: 0;
+	}
+	50%{
+		transform: translateX(-10);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+body{
+	max-width: 1366px;
+	min-width: 320px;
+	width: 100%;
+	margin: auto;
+	height: auto;
+	box-shadow: 0 5px 30px #bdc3c7;
+}
+
+header{
+	margin: auto;
+	width: 100%;
+}
+
+
+header div nav{
+	margin-top: 1.25em;
+	margin-right: 2em;
+}
+
+header a figure{
+	width: 4em;
+	height: 4em;
+	display: block;
+	margin: auto;
+	padding: 1em;
+}
+
+header figure img{
+	height: 100%;
+}
+
+header a{
+	text-decoration: none;
+	text-align: center;
+}
+
+header h1{
+	font-family: Martel;
+	font-weight: normal;
+	color: #2c3e50;
+	margin-top: .3em;
+}
+
+header h1 span{
+	font-weight: bold;
+}
+
+.horzNav{
+	display: none;
+}
+.mobileNav{
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: auto;
+}
+.mobileNav ul{
+	list-style-type: none;
+	background-color: red;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.mobileNav li{
+	float: left;
+	width: 33.33%;
+}
+.mobileNav li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+	background-color: #2c3e50;
+	font-family: Martel;
+	color: white;
+}
+
+.mobileNav li .active{
+	background-color: #c0392b;
+}
+
+.mobileNav li a:hover{
+	color: #2c3e50;
+	background-color: white;
+}
+
+#banner{
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 0;
+	display: block;
+}
+
+#banner img{
+	width: 100%;
+	margin-bottom: 0;
+	display: block;
+	clear: both;
+}
+.bannerOverlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	transition: .5s ease;
+	display: block;;
+}
+#banner h1{
+	font-family: Martel;
+	font-weight: normal;
+	font-size: 3em;
+	color: white;
+	margin-top: .3em;
+	margin-bottom: 0;
+	animation: 2s ease-out 0s 1 fadeInFromLeft;
+}
+#banner h2{
+	font-family: Martel;
+	font-weight: normal;
+	font-size: 1em;
+	color: white;
+	margin-top: -20px;
+	margin-left: 140px;
+	animation: 3s ease-out 0s 1 fadeInFromLeft;
+}
+.copyText {
+	width: 65%;
+	margin: auto;
+	color: #2c3e50;
+	font-family: Martel;
+	font-size: 90%;
+}
+
+#resumeText h3{
+	margin-bottom: 0;
+}
+
+#resumeText h5{
+	margin-top: .1em;
+	margin-bottom: 0;
+}
+
+#resumeText p{
+	margin-top: .25em;
+}
+
+#resumeText .normalSpan{
+	font-weight: normal
+}
+/*WORK TILES*/
+#stdImg{
+	display: none;
+}
+#mobileImg{
+	display: block;
+}
+#mainContent{
+	margin: auto;
+	margin-top: 0;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+
+.workTitles{
+	width: 100%;
+	margin-top: .3em;
+}
+
+.workTitles h1{
+	font-family: Martel;
+	font-weight: normal;
+	color: #2c3e50;
+	clear: both;
+}
+
+.tile{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin-top: 0;
+	background-color: #2c3e50;
+	margin-bottom: 0;
+}
+
+.tileInner{
+	position: relative;
+	width: 100%;
+	line-height: 1.5em;
+}
+
+.subtitle{
+	font-size: .5em;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(44, 62, 80,.7);
+	display: block;
+}
+
+.tile:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 30px;
+	font-family: Martel;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	line-height: 1.1em;
+}
+
+.tile:hover img{
+	transform: scale(1.2);
+	opacity: .3;
+}
+
+.tileLeft{
+	float: left;
+}
+
+.tileRight{
+	float: right;
+}
+
+.tile img{
+	max-height: 100%;
+	max-width: 100%;
+	transition: .5s ease;
+	display: block;
+}
+
+
+
+
+/*Buttons*/
+button{
+	margin: auto;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	padding: 10px 20px 10px 20px;
+	display: block;
+	clear: both;
+	color: white;
+	font-family: Martel;
+	font-weight: bold;
+	background-color: #2c3e50;
+	border: none;
+	border-radius: 4px;
+}
+
+button:hover{
+	background-color: #c0392b;
+}
+
+ul{
+	list-style-type: circle;
+}
+
+#resumeButton{
+	margin-top: 2em;
+}
+
+/*BELOW WORK TILES*/
+footer{
+	clear: both;
+	background-color: #2c3e50;
+	text-align: center;
+}
+
+footer h2{
+	text-align: center;
+	font-family: Martel;
+	padding: .5em;
+	font-size: 1em;
+}
+
+footer h2 a{
+	text-decoration: none;
+	color: #7f8c8d;
+}
+
+footer .icons{
+	width: 7%;
+	display: inline-block;
+	padding: 1em;
+	opacity: .4;
+}
+
+footer .icons:hover{
+	opacity: 1;
+	transition: .5s ease;
+}
+
+@media (min-width: 725px){
+	.mobileNav{
+		display: none;
+	}
+	.horzNav{
+		display: inline-block;
+		
+	}
+	#banner{
+		width: 95%;
+	}
+	#mainContent{
+		width: 95%;
+	}
+	header a figure{
+		width: 4em;
+		height: 4em;
+		display: inline-block;
+		float: left;
+		padding: 1em;
+		margin-left: 25px;
+		margin-top: 15px;
+	}
+
+	header figure img{
+		height: 100%;
+	}
+
+	header a{
+		text-align: center;
+	}
+
+	header h1{
+		display: inline-block;
+		float: left;
+		font-family: Martel;
+		font-weight: normal;
+		color: #2c3e50;
+		margin-top: 37px;
+		margin-left: 8px;
+	}
+
+	div .horzNav{
+		display: block;
+		float: right;
+	}
+
+	.horzNav li{
+		float: left;
+		padding: 1em;
+		list-style-type: none;
+	}	
+	.horzNav ul a{
+		text-decoration: none;
+		font-family: Martel;
+		color: #2c3e50;
+		display: inline-block;
+		background-color: none; 
+	}
+
+	.horzNav a:hover{
+		color: #c0392b;
+	}
+
+	.horzNav a.active{
+		font-weight: bold;
+	}
+	.tile{
+		width: 50%;
+	}
+	#stdImg{
+		display: block;
+	}
+	#mobileImg{
+		display: none;
+	}
+	footer{
+		margin: auto;
+		width: 95%;
+	}
+	footer .icons{
+	width: 3.5%;
+	}
+}
+
+
+
+
+/*YOUTUBE EMBEDDING STYLES*/
+	.youtube-player{
+		position: relative;
+		padding-bottom: 56.23%;
+		height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+		height: auto;
+        border: none;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+    }
+    
+    .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("sourceImages/ati/play.png"), repeat;
+		z-index: 100;
+        cursor: pointer;
+    }

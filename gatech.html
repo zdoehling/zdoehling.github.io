@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zee Doehling</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="workStyles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="sourceImages/icons/favicon.ico" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<a href="index.html">
+			<figure>
+				<img src="sourceImages/headerLogoColor.png" alt="zee doehling logo">
+			</figure>
+		</a>
+		<a href="index.html">
+			<h1>
+				Zee <span>Doehling</span>
+			</h1>
+		</a>
+		<div>
+			<nav class="mobileNav">
+				<ul>
+					<li><a href="index.html" class="active">work</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="resume.html">résumé</a></li>
+				</ul>
+			</nav>
+			<nav class="horzNav">
+				<ul>
+					<li><a href="index.html" class="active">work</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="resume.html">résumé</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="copyText">
+			<img class="mainLogo" src="sourceImages/gatech/gatechLogo.png" alt="Georgia Tech Logo">
+			<p>In August 2019 I started my Master in Digital Media. The classes have covered a lot of design thinking and theory, and many of my classes are mixed courses with Master’s and PhD students involved. That just goes to say we do a large amount of high-level reading and discussion, but all the courses are project based, so they benefit someone seeking to work outside academia.</p>
+			<p>The projects have a wide range and rather try to classify each one, I felt it would be easier to put some of my favorite projects from the program on this page and update it as I go along!</p>
+			<h1>Thuba - an Arduino powered Theramin</h1>
+			<div class="responsiveVideo">
+				<div class="youtube-player" data-id="ZGv3Xjw3iGE"></div>
+				<h5 class="imgCap">Our group playing the Thuba</h5>
+			</div>
+			<p>The self-coined “Thuba” came out of an idea to combine a tuba and a theremin, an instrument played based on distance to a sensor. Through the iterative process we centered on creating a group musical experience and built out this PVC robo fellow with 4 outward facing ultra-sonic sensors. Based on the distance of the musician’s hands the sensors play a tone. Our musically inclined group member set each to play in harmony with the other, so when people play around with it there is at least some form of pleasant mix of noise.</p>
+			<p>On this project I played key roles in ideation, managing the Arduino controllers, and the project documentation. I planned to link out to the website we created, however, unknown to me, Squarespace free doesn’t store your website for future use and removed all the photos. I still created a new page hosted on this site with the written documentation outlining our process and design statement <a href="thubaDoc.html">found here for the curious.</a></p>
+			<h1>Physical Arduino Sea Turtle Controller Prototype</h1>
+			<div class="responsiveVideo">
+				<div class="youtube-player" data-id="cu4auGVb-4c"></div>
+				<h5 class="imgCap">Controller spotlight and demo</h5>
+			</div>
+			<p>As an expansion from another project, my group mate and I building out a physical controller as a companion for a p5.js game. We made modifications to an existing 3D sea turtle model and outfit a Tinyduino with an accelerometer which controls the sea turtle character in the game. The project timeline was cetnered around creating functioning prototypes, but we brainstormed a few stretch goals we could accomplish fi we had extra time. Goals such as, a button on the controller to start, better game design with prompts and score, lights on controller indicating the turtle ate 'good' or 'bad' food.</p>
+			<p>The turtle controller removes a layer of precision found earlier with a keyboard and mouse which creates a more immersive experience. The game centers around avoiding hazardous objects while eating healthy food, and the added difficulty from the controller delivers the message through better representation of the current challenges sea turtles face.</p>
+			<h1>Generative Microphone Colors</h1>
+			<figure class="colors">
+					<a href="sourceImages/gatech/soundwaves/mlk.png" target="_blank"><img src="sourceImages/gatech/soundwaves/mlk.png" alt="Poster Patents"></a>
+					<figcaption>MLK "I Have a Dream" speech</figcaption>
+			</figure>
+			<figure class="colors">
+					<a href="sourceImages/gatech/soundwaves/jfk.png" target="_blank"><img src="sourceImages/gatech/soundwaves/jfk.png" alt="Poster Patents"></a>
+					<figcaption>JFK "Ask Not" speech</figcaption>
+			</figure>
+			<figure class="colors">
+					<a href="sourceImages/gatech/soundwaves/myvows.png" target="_blank"><img src="sourceImages/gatech/soundwaves/myvows.png" alt="Poster Patents"></a>
+					<figcaption>My vows when I got married</figcaption>
+			</figure>
+			<p>This project takes input from your microphone to generate a colorful display based on your input volume and frequency. I worked with one other group member as the coding lead for the project using HTML, CSS, JS and P5js.</p>
+			<p>The meaning behind this project is largely dependent upon the user’s input. To some it could simply be an abstract array of colors for purely aesthetic enjoyment, and others could visualize particularly meaningful sounds like I did above.</p>
+			<button type="button" onclick="window.open('sourceImages/gatech/soundwaves/index.html','_blank')">Try out the project here to make your own!</button>
+			<img class="bodyImg" src="sourceImages/gatech/snapImg.jpg">
+			<h1>Ethical UX Research Analysis: SnapChat</h1>
+			<p>In my ethics studio we have been diving into ethical thinkers through the centuries, and one of our challenges involved selecting an artifact and analyzing it from various modes of ethics. While I don’t use social media as frequently as some of my peers, I was interested in what made SnapChat stand out compared to their competitor social media products, and the way the product is designed to be addictive as well as the effects on their userbase. Moving from those topics, I wanted to then discuss who was responsible for the negative effects such as poor self-image, depression, and increased FOMO (Fear of Missing Out) seen affecting many of their users based on the ethical models.</p>
+			<button type="button" onclick="window.open('sourceImages/gatech/doehling_SnapChatResearch.pdf','_blank')">SnapChat UX Ethics PDF</button>
+			<h1>Fun Web Games</h1>
+			<p>As part of a way to refresh our coding skills we did a web development camp before the semester started. We met each day for two weeks and at the end of each week we wrapped up a project.</p>
+			<div id="gtquiz">
+				<a onclick="window.open('PaperQuiz/index.html','_blank')"><img style="width: 100%" src="sourceImages/gatech/quiz.png"></a>
+				<button type="button" onclick="window.open('PaperQuiz/index.html','_blank')">Week 1: Personality Quiz</button>
+			</div>
+			<div id="gtrun">
+				<a onclick="window.open('runclicker/index.html','_blank')"><img  style="width: 100%" src="sourceImages/gatech/run.png"></a>
+				<button type="button" onclick="window.open('runclicker/index.html','_blank')">Week 2: Run Clicker Game</button>
+			</div>
+		<div style="clear: both; margin-top: 20px;">
+		<button class="dirButton" type="button" onclick="location.href='stride.html'" style="margin: 0; clear: none; float: left;">&larr; Previous Project</button>
+		<button class="dirButton" type="button" onclick="location.href='ati.html'" style="clear: none; margin-right: 0;"> Next Project &rarr;</button>
+		</div>
+	</div>
+	<script src="projectButtons.js"></script>
+	<footer>
+		<a href="mailto:zdoehling@gmail.com"><img class="icons" src="sourceImages/icons/email.png" alt="email icon"></a>
+		<a href="https://www.instagram.com/z.doehling/" target="_blank"><img class="icons" src="sourceImages/icons/insta.png" alt="instagram icon"></a>
+		<a href="https://www.facebook.com/zee.doehling" target="_blank"><img class="icons" src="sourceImages/icons/facebook.png" alt="facebook icon"></a>
+		<a href="https://www.linkedin.com/in/zeedoehling/" target="_blank"><img class="icons" src="sourceImages/icons/lin.png" alt="linked in icon"></a>
+		<!---<h2> <a href="mailto:zdoehling@gmail.com">zdoehling@gmail.com</a></h2>--->
+	</footer>
+	<script src="youtubeScript.js"></script>
+</body>
+</html>

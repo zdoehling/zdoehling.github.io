@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zee Doehling</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="workStyles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="sourceImages/icons/favicon.ico" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<a href="index.html">
+			<figure>
+				<img src="sourceImages/headerLogoColor.png" alt="zee doehling logo">
+			</figure>
+		</a>
+		<a href="index.html">
+			<h1>
+				Zee <span>Doehling</span>
+			</h1>
+		</a>
+		<div>
+			<nav class="mobileNav">
+				<ul>
+					<li><a href="index.html" class="active">work</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="resume.html">résumé</a></li>
+				</ul>
+			</nav>
+			<nav class="horzNav">
+				<ul>
+					<li><a href="index.html" class="active">work</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="resume.html">résumé</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="copyText">
+		<img class="mainLogo" src="sourceImages/gatech/gatechLogo.png" alt="Georgia Tech Logo">
+		<h1>Contribution of Insights</h1>
+		<p>The goal of this entire process was prototype exploration. In our case, it really was the journey, not the destination. From the get-go in the brainstorming session, we knew that we wanted to create an interactive group experience, and we had an idea that we wanted to look for an Arduino project. A few of the group members haven’t used one before, so it was great time to get familiar with the software. After an initial testing and understanding phase through building a replica of what we found online, we remixed the project by removing some components such as the resistors.  Then, after we searched around for good materials and landed on PVC, we took out the breadboard too. Through removing some of the parts, and building it to our own liking, we found ways to boost sound output and get the entire thing to fit inside a 3” PVC cap, freeing up design space for the housing.</p>
+
+		<p>Regarding the sound output, the projects initially had only one point of sound generation, but our build has 4x that. Through some musical math, we adjusted the tonal output script to play in perfect scales and wrote the unique code to the corresponding hardware. Finally, with the Arduinos set up to work well together and remixed to fit in our housing, it was time to nail down the overall form.</p>
+				
+		<p>Initially, we wanted to use the individual nature of each Arduino build to inform our design of the form. Because each Arduino was equipped with its own battery, speaker, etc, they didn’t need to be connected to each other to function. What we discovered, however, is through separating the experience into, at the time, 5 distinct structures, we consequently altered the experience from multiple people operating as a group interacting with one installation, to a sort of one-on-one correspondence of person to structure. To eliminate this, we found a four-way PVC splitter and mounted four of the Arduinos to each end. Then we customized the PVC through drilling into the side of our four-way splitters so we could attack a vertical tubing.</p>
+		
+		<p>Through this exploration we found that mixing the audio through the central pipe and having multiple users interact with one structure would create an experience for multiple people to interact together. We also used the newly smaller scale to our advantage as our speakers weren’t super loud, so when we created these free-standing floor figures, the big structure with small sound was a mismatch. This way, through having a table-top structure the small sound with small figure better matches expectations. That being said, our next steps would still involve amplifying the sound and playing with noise distortions as well as continued exploration in the modular design.</p>
+		
+		<p>Contribution of Insights List:</p>
+		<ul>
+			<li>Modular design based around end caps</li>
+		
+			<li>Multi-user interactive spaces</li>
+		
+			<li>Tweaks to existing theremin design for amplified sound with reason to go even louder</li>
+		
+			<li>Playfulness though anthropomorphic looking character and low barrier for interaction</li>
+		
+			<li>Frequency tuning allows for untrained users to create decent sound pairings</li>
+		</ul>
+		<h1>Iterative Process</h1>
+		<p>INITIAL CONCEPT</p>
+		<p>From our initial brainstorm session we started to feel out what realm we wanted to explore. For reasons of all caps, we latched on to the idea of working with Kazoos.
+
+		<p>POSSIBLE EXPLORATION</p>
+		<p>Taking the Kazoo concept, we considered an idea around blowing on something. We found <a href="https://www.instructables.com/id/An-LED-You-Can-Blow-Out-Like-a-Candle/">this interesting Instructables demo using LEDs for sensing someone blowing air.</a> After discussion we decided that it was less the blowing aspect of Kazoos we became fond of and more the musical consideration. Using LEDs in our project would still have been another interesting method of communicating with the users, so adding lights could be in future iterations if this project would be expanded passed the due date.</p>
+
+		<p>INSTRUCATBLES ARDUINO MUSIC MAKER</p>
+		<p>Moving into the music side, we became interested in another Instructables project creating a theremin using an ultrasonic sensor on an Arduino. The project on its own was very basic using a breadboard, so after building our own versions, we wanted to find ways to iterate on top of the initial concept. 
+		
+		<p>Being that the project revolved around one single theremin we brainstormed ways we could create an interactive space where a group of people could interact with our artifact as well as each other. Strangers could use our device to create a dialog opportunity that would normally not exist, while friends could use the experience to create music and memories to for a greater bond.</p>
+
+		<p>FIRST QUAD DESIGN</p>
+		<p>Our first concept sketch involved creating 5 heads facing out of a large central opening, maybe even a part from a tuba, to emit the sound. We liked the direction and group thinking, then as the logistics started to form we wanted to see what we thought of a more modular design.</p>
+
+		<p>HOUSING DESIGN</p>
+		<p>To get our theremin from table to installation we discussed various ways we could hid all the components while still explaining our design affordances  to our user base.  We also wanted to amplify the sound, so we designed this tube structure that would extend the sensors to the user to imply an area of interest while also using the lower portion of the tube for amplification. This modular design could provide ample customization to each potential setup space.</p>
+
+		<p>MATERIALS</p>
+		<p>To house our project we wanted to find a balance of affordability and usability. Something such as the duct hosing was cheap, but the flexible nature could make it difficult to achieve a consistent sound for users to manipulate. Instead we opted for the ridged body supplied by PVC piping. It took some playing around to see what diameter is best. 2” was too narrow to house the theremin while 4” grew very costly. 3” could house the theremin while still being the most cost effective.</p>
+
+		<p>PVC PROTOTYPE</p>
+		<p>Our first model of the housing centered around this snake-like design. The goal was to create multiple free standing versions of the theremin tuned to different octaves. These individual pieces could be positioned in any number of orientations or locations within a room to create a tailored space. Playing with this idea we started to encounter 2 drawbacks:
+			<ul>
+				<li>high cost</li>
+				<li>the more individual the parts were the less a “combined” experience was achieved.</li>
+			</ul>
+		</p>
+
+		<p>PVC PROTOTYPE FINDINGS</p>
+		<p>While we thought about going in different directions, what we did learn from our first prototype is: we were correct in thinking our theremin could fit inside a condensed section of the tubing.</p> 
+
+		<p>SHORTENING</p>
+		<p>Our first model of the housing centered around this Knowing that the theremin was contained inside the cap, we were able to start to play around with our initial set up concept and the idea of a condensed table top version came about after shortening the central tubing. This would create a much more manageable cost without losing much from our initial plans- the only real loss being the need for a table or something similar to raise it to user height.</p>
+
+		<p>CONDENSING THE EXPERIENCE</p>
+		<p>Pushing the table top design forward, we realized that focusing on a group user experience would be most effective through a more centralized unit. Also the cost factor nudging us in a more manageable solution came with the added bonus of morphing the sound within the structure itself. Our initial designs had each speaker within isolated tubes. Yes, the user could head multiple sounds at once, but this way all the sound ways are being merged within the central tubing which creates a greater sense of “making together.”</p>
+		
+		
+		<p>ROBOTIFICATION</p>
+		<p>After installing all the parts and taking in the form as a whole we found some unexpected correlations. The two whole for the sensors resembled eyes, and with the 4 prong base bearing a resemblance of legs on top of that coupled with the beeping sound… we realized we made a robot. After all-but-asking to be painted metallic silver, we have our four legged, four headed, musical robo-buddy.</p>
+		<button class="nonAutoDirButton" type="button" onclick="location.href='gatech.html'" style="margin: 0; clear: none; float: left;">&larr; Back to MS in DM</button>
+	</div>
+	<script src="projectButtons.js"></script>
+	<footer>
+		<a href="mailto:zdoehling@gmail.com"><img class="icons" src="sourceImages/icons/email.png" alt="email icon"></a>
+		<a href="https://www.instagram.com/z.doehling/" target="_blank"><img class="icons" src="sourceImages/icons/insta.png" alt="instagram icon"></a>
+		<a href="https://www.facebook.com/zee.doehling" target="_blank"><img class="icons" src="sourceImages/icons/facebook.png" alt="facebook icon"></a>
+		<a href="https://www.linkedin.com/in/zeedoehling/" target="_blank"><img class="icons" src="sourceImages/icons/lin.png" alt="linked in icon"></a>
+		<!---<h2> <a href="mailto:zdoehling@gmail.com">zdoehling@gmail.com</a></h2>--->
+	</footer>
+	<script src="youtubeScript.js"></script>
+</body>
+</html>
