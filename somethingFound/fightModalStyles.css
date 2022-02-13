@@ -1,0 +1,63 @@
+/* The Modal (background) */
+#fightText{
+  height: 10vh;
+}
+
+.fightModalTextContainer{
+  clear: both;
+  padding: 1vh;
+}
+
+.fightModalText{
+  display: block;
+  color: #D5D2D8;
+  font-family: "press start 2p";
+  padding: 1vh 0;
+}
+
+.friendly{
+  float: left;
+  clear: left;
+}
+.enemy{
+  float: right;
+}
+
+
+.healthBorder{
+  clear: both;
+  margin: auto;
+  width: 100%;
+  height: 4vh;
+}
+
+.barInner{
+  background-color: #D5D2D8;
+}
+
+#healthProg{
+  height: 100%;
+}
+
+
+
+#fightButton{
+  font-family: "press start 2p";
+}
+
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #D6D2D8;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,99 @@
+#left{
+  width: 50%;
+  float: left;
+  display: block;
+}
+#right{
+  width: 50%;
+  float: right;
+  display:block;
+}
+
+#scrollBox{
+  height: 80vh;
+  margin: auto;
+  overflow: auto;
+  opacity: .2;
+  transition: ease-in-out .5s;
+}
+
+h1,h5{
+  text-align: center;
+}
+
+img {
+  padding: 20px;
+  width: 90%;
+  overflow: hidden;
+}
+
+#eventBox{
+  margin: 50px auto auto auto;
+  width: 50%;
+  height: 20vh;
+  opacity: .2;
+  transition: ease-in-out .5s;
+  border: 5px dashed black;
+}
+
+#eventBoxText{
+  padding: 4vh;
+  text-align: center;
+  color: black;
+  
+}
+
+#timer{
+  box-sizing: border-box;
+  width: 98%;
+  background-color: lightgray;
+  height: 5vh;
+  margin: 50px auto auto auto;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+#timerFill{
+  background-color: dimgray;
+  width: 0%;
+  height: 100%;
+  text-align: right;
+  color: white;
+  font-size: 2vh;
+  padding: 1.5vh;
+  overflow: hidden;
+}
+
+#scrollBox:hover{
+  opacity: 1;
+}
+
+#eventBox:hover{
+  opacity: 1;
+}
+
+#eventList{
+  text-align: center;
+  overflow-y: scroll;
+  height: 4em;
+}
+
+#jumpButtons{
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+/* Tool tip 
+.tooltip {
+  text-decoration:none;
+  position:relative;
+}
+.tooltip span {
+  opacity:0;
+  display: block;
+  position:fixed;
+  overflow:hidden;
+  transition: ease-out 2s;
+}*/

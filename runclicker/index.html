@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Run Clicker</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="runStyles.css" type="text/css">
+        <script src="runMath.js"></script>
+    </head>
+    <body style="background-image: url('backgroundImg.jpg')">
+
+        <div class="gridContainer">
+            <div class="gridItem" id="runDisplay">
+                <div id="runCounter"></div>
+                <div id="moneyCounter"></div>
+                <span class="tooltipText" style="font-size: .5em; width: 250px;" id="counterHover">1 Mile Per Click</span>
+                
+            </div>
+            <div class="gridItem gridButton" id="runButton">
+                <div id="runButLabel">Walk</div>
+            </div>
+            <div class="gridItem titles" id="gear">
+                <div class="gearGrid">
+                    <div class="gearGridItem itemTitle" id="gearTitle">Clothes</div>
+                    <div class="gearGridItem itemButton" id="jogClothes">Jogging Clothes $50<span class="tooltipText">+1 Mile Per Click</span></div>
+                    <div class="gearGridItem itemButton" id="runShoes">Running Shoes $100<span class="tooltipText">+1 Mile Per Click</span></div>
+                    <div class="gearGridItem itemButton" id="betterShoes">Pro Shoes $400<span class="tooltipText">+1 Mile Per Click</span></div>
+                    <div class="gearGridItem itemButton" id="watch">Apple Smart Watch $2000<span class="tooltipText">+5 Mile Per Click</span></div>
+                    
+                </div>
+            </div>
+            <div class="gridItem gridButton" id="runRace">
+                <div>America's Race <span class="tooltipText" style="font-size: .5em; width: 200px;">(Alaska to Argentina)<br>+10,000 Miles<br>-$3000<br></span></div>
+            </div>
+            <div class="gridItem titles" id="jobs">
+                <div class="gearGrid">
+                    <div class="gearGridItem itemTitle" id="jobTitle">Jobs</div>
+                    <div class="gearGridItem itemButton" id="localCoach">Local Coach<span class="tooltipText">need 1300 miles <br> +10 Miles/s & +$5/s</span></div>
+                    <div class="gearGridItem itemButton" id="hsCoach">High School Coach<span class="tooltipText">need 2500 miles <br> +15 Miles/s +$10/s</span></div>
+                    <div class="gearGridItem itemButton"id="profCoach">Professional Coach<span class="tooltipText">need 5000 miles <br> +50 Miles/s +$25/s</span></div>
+                    <div class="gearGridItem itemButton" id="olyPacer">Olympic Pacer<span class="tooltipText">need 10000 miles <br> +100 Miles/s +$100/s</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="textScrollBox" style="background-image: linear-gradient(white, rgba(255,255,255,0))">
+            <div id="content"></div>
+        </div>
+        <div class="gridButton" id="demoButton" style="display: none;">
+            Demo Speed Up <span class="tooltipText">+100 Miles <br> +$100</span>
+        </div>
+        <audio id="moonSound" preload="auto">
+            <source src="moon.wav"></source>
+        </audio>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<html onclick="soundGo();">
+  <head>
+    <Title>Social Media Clicker</Title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="intro">
+      <h1>Social Sim</h1>
+      <p>You're sitting on the couch at a party. <br>You can click on people to talk to them. <br>Or you can scroll on your phone. <br>Every moment you spend doing one, you lose a moment to do the other.</p>
+      <div id="start" onclick="start()">START</div>
+    </div>
+
+
+
+    <!--
+    <div id="timer">
+      <div id="timerFill">0</div>
+    </div>
+    -->
+    <div id="sim">
+      <div id="right">
+        <h3 id="eventCount">In-Person Interaction: 0</h3>
+        <h5>(Click to talk)</h5> 
+        <div id="topImgBox" onclick="talk()">
+          <div id="partyBox">
+            <img id="phoneImg" src="photos/phone.png" alt=""> 
+            <img id="peopleImg" src="photos/combined.png" alt=""> 
+          </div>
+          <div id="convBox">
+            <img id="conv" src="photos/youTalk.png" alt="">
+          </div>
+        </div>
+
+      <div id="left">
+        <h3 id="socialText"><span id="numCount">Scrolled: 0 </span><span id="likes">Likes: 0 </span><span id="followers">Followers: 0 </span></h3>
+        <h5>(Double click to like a post. Interact online to gain followers.)</h5>  
+        <div id="scrollBox">
+            <img id="img1" src="https://source.unsplash.com/random/1600x900" alt="" onclick="like()"><br>
+            <img id="img2" src="https://source.unsplash.com/random/1000x1000" alt="" onclick="like()"><br>
+            <img id="img3" src="https://source.unsplash.com/random/800x600" alt="" onclick="like()"><br>
+        </div>
+      </div>
+      
+      
+
+        <!-- Hover Box
+          <div id="eventBox" onclick="eventCount()">
+            <div id="eventBoxText"><h5>You put your phone down and interact with those around you.</h5><p>(Move cursor around to simulate interacting with the physical world)</p></div>
+          </div>
+        <div id="eventList">
+          Events Displayed Here
+        </div>
+        -->
+        <!--
+        <div id="jumpButtons">
+          <h3>Presentation Controls</h3>
+          <button onclick="social()">High Social Ending</button>
+          <button onclick="mid()">In Between</button>
+          <button onclick="events()">High Events Ending</button>
+        </div>
+        -->
+      </div>
+    </div> 
+        
+        
+          
+  </body>
+  <script src="scrollingScript.js"></script>
+</html>

@@ -1,0 +1,189 @@
+#intro{
+  display: block;
+  margin-top: 25vh;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+#intro h1{
+  font-size: 200%;
+}
+
+#intro p{
+  text-align: left;
+  font-size: 100%;
+  line-height: 40px;
+  width: 80%;
+  margin: auto;
+}
+
+#start{
+  font-size: 2em;
+  text-align: center;
+  width: 200px;
+  padding: 3px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+#start:hover{
+  background: black;
+  color: white;
+}
+
+#sim{
+  display: none;
+}
+
+#left{
+  width: 100%;
+  display: block;
+  height: 40vh;
+  
+}
+#right{
+  width: 100%;
+  display:block;
+  height: 30vh;
+  /* bottom margin if moved below
+  margin-top: 12vh;*/
+}
+
+#music{
+  margin: auto;
+}
+
+#scrollBox{
+  margin: auto;
+  height: 40vh;
+  overflow: auto;
+  opacity: 1;
+  transition: ease-in-out .5s;
+}
+
+h1,h2,h3,h4,h5,p{
+  text-align: center;
+}
+
+span{
+  padding-left: 2em;
+}
+
+p{
+  font-size: xx-small;
+}
+
+img {
+  padding: 20px;
+  width: 90%;
+  overflow: hidden;
+}
+
+#eventBox{
+  margin: auto;
+  width: 50%;
+  opacity: 1;
+  transition: ease-in-out .5s;
+  border: 5px dashed black;
+}
+
+#eventBoxText{
+  padding: 1vh;
+  text-align: center;
+  color: black;
+  
+}
+
+#timer{
+  box-sizing: border-box;
+  width: 98%;
+  background-color: lightgray;
+  height: 5vh;
+  margin: 1vh auto auto auto;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+#timerFill{
+  background-color: dimgray;
+  width: 0%;
+  height: 100%;
+  text-align: right;
+  color: white;
+  font-size: 2vh;
+  padding: 1.5vh;
+  overflow: hidden;
+}
+/*
+#scrollBox:hover{
+  opacity: 1;
+}
+
+#eventBox:hover{
+  opacity: 1;
+}
+*/
+
+#eventList{
+  text-align: center;
+  overflow-y: scroll;
+  height: 4em;
+}
+
+#jumpButtons{
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+#partyBox{
+  display: block;
+}
+
+#partyBox, #partyBox img {
+    position: relative;
+    
+  }
+#partyBox img {
+    z-index: 101;
+  }
+#partyBox img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+
+#peopleImg{
+  display: block;
+  opacity: 1;
+}
+
+#convBox{
+  display: none;
+}
+
+/* Tool tip 
+.tooltip {
+  text-decoration:none;
+  position:relative;
+}
+.tooltip span {
+  opacity:0;
+  display: block;
+  position:fixed;
+  overflow:hidden;
+  transition: ease-out 2s;
+}*/
+
+@media (min-width: 600px){
+  html{
+    width: 600px;
+    margin: auto;
+  }
+}

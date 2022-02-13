@@ -1,0 +1,227 @@
+
+body{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+    color: #2B3A67;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 15vh 10vh 10vh 10vh 10vh;
+    grid-gap: 10px;
+    padding: 10px;
+    width: 80vw;
+    margin: auto;
+    
+  }
+
+.gridItem{
+    display: subgrid;
+    font-size: 30px;
+  }
+
+
+#runDisplay{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#runButton{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    font-size: 10vh;
+    background-color: #E84855;
+    color: white;
+    transition: .1s ease;
+}
+
+#runButton:hover{
+    font-size: 12vh;
+}
+
+#runButton:active{
+    font-size: 10vh;
+}
+
+
+#gear{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border: 5px solid #FF9B71;
+}
+
+.gearGrid{
+    display: block;
+    width: 100%;
+}
+
+.gearGridItem{
+    display: block;
+    box-sizing: border-box;
+}
+
+#gearTitle{
+    display: block;
+    margin: auto;
+    clear: both;
+}
+
+#jobTitle{
+    display: block;
+    margin: auto;
+    clear: both;
+}
+
+#runRace{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #FF9B71;
+    color: white;
+    transition: .1s ease;
+}
+
+#runRace:hover{
+    font-size: 5vh;
+}
+
+#jobs{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    border: 5px solid #FF9B71;
+}
+
+.gridButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titles{
+    display: flex;
+    justify-content: center;
+}
+
+.titles div{
+    display: inline;
+    text-align: center;
+}
+
+.itemTitle{
+    font-weight: bold;
+}
+
+#runCounter{
+    font-size: 1.5em;
+}
+
+#moneyCounter{
+    font-size: .6em;
+}
+
+.itemButton{
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    font-size: .5em;
+    width: 45%;
+    margin: 1% 2.5%;
+    padding: 1vh 0;
+    border: 2px solid #FF9B71;
+}
+
+.itemButton:hover{
+    background-color: #FF9B71;
+    font-weight: bold;
+    color: white;
+}
+
+#demoButton{
+    transition: .1s ease;
+    background-color: #FF9B71;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+#demoButton:hover{
+  background-color: #E84855;
+  }
+
+/* Text Box Display*/
+#textScrollBox{
+    display: block;
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+    overflow: auto;
+    height: 10vh;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    }
+    
+::-webkit-scrollbar-track {
+border: 1px solid #FF9B71;
+}
+
+::-webkit-scrollbar-thumb {
+background: #FF9B71;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #E84855;  
+}
+
+/*Tool Tips*/
+.tooltipText {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    width: 200px;
+    margin-left: -60px;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .itemButton:hover .tooltipText {
+    visibility: visible;
+  }
+
+  #runDisplay:hover .tooltipText {
+    visibility: visible;
+  }
+
+  #runRace:hover .tooltipText {
+    visibility: visible;
+  }
+
+  #demoButton:hover .tooltipText {
+    visibility: visible;
+  }
+
+  

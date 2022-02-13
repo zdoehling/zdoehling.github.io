@@ -1,0 +1,40 @@
+#myEventModal{
+    font-family: "press start 2p";
+}
+
+#eventTitle{
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+#eventTextBox{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventButtonContainer{
+    display: block;
+    width: 100%;
+    height: 7vh;
+    font-size: .8em;
+}
+
+.eventButton{
+    display: block;
+    width: 40%;
+    clear: none;
+    margin: 2vh 2vh 0 2vh;
+}
+
+.eventEffect{
+    display: block;
+    width: 43%;
+    clear: none;
+    margin: 1vh 2vh;
+    text-align: center;
+}

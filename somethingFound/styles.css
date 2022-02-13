@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+body{
+    margin-top: 5vh;
+    background-color: #121014;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.bodyContainer{
+    width: 90vw;
+    margin: auto;
+    color: #D5D2D8;
+    font-family: "press start 2p";
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.infoText{
+    display: none;
+    clear: both;
+    margin-top: 1vh;
+}
+
+.name{
+    display: block;
+    text-align: left;
+    float: left;
+    width: 50%;
+    margin: 0;
+}
+
+.level{
+    display: block;
+    float: right;
+    text-align: right;
+    width: 50%;
+    margin: 0;
+}
+
+.bars{
+    margin: auto;
+    width: 100%;
+    height: 20vh;
+    display: none;
+}
+
+.bar{
+    box-sizing: border-box;
+    border: 2px solid #D5D2D8;
+    color: #4E4D4F;
+    display: block;
+    margin: 1vh 0;
+    float: none;
+}
+
+
+.innerText{
+    padding: .8vh;
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+}
+
+.innerTextRight{
+    display: inline-block;
+    text-align: right;
+    width: 48%;
+}
+
+.huntingBorder{
+    float: right;
+    width: 48%;
+    margin-right: 0;
+}
+
+.attachmentBorder{
+    float: left;
+    width: 100%;
+}
+
+.hungerBorder{
+    float: left;
+    width: 100%;
+}
+
+.buttons{
+    margin-top: 5vh;
+}
+
+.button{
+    clear: both;
+    margin: 2vh auto 2vh auto;
+    border: 2px solid #D5D2D8;
+    border-radius: 5px;
+    display: block;
+    width: 45%;
+    background-color: #D5D2D8;
+    color: #121014;
+    text-align: center;
+    padding: 1vh 1vh;
+}
+
+.button:hover{
+    background-color: #121014;
+    color: #D5D2D8;
+}
+
+.button:active{
+    background-color: #4E4D4F;
+    color: #D5D2D8;
+    border: 2px solid #D5D2D8;
+}
+
+#mainButton{
+    display: block;
+}
+
+#fightButton{
+    width: 25%;
+}
+
+.actionBorder{
+    margin-top: 5vh;
+}
+
+#actionBar{
+    background-color: #D5D2D8;
+    width: 0%;
+}
+
+/*Story text box*/
+.textBox{
+    clear: both;
+    display: block;
+    margin: auto;
+    font-family: serif;
+    overflow: auto;
+    text-align: center;
+    height: 30vh;
+}
+
+
+/* media quereys*/
+@media screen and (min-width: 800px){
+    .bodyContainer{
+        width: 400px;
+    }
+    /*Scroll Bar styles*/
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        }
+        
+    ::-webkit-scrollbar-thumb:active ::-webkit-scrollbar-track {
+    background: #4E4D4F;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: #4E4D4F;  
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #8E8D8F;  
+    }
+    ::-webkit-scrollbar-thumb:active {
+        background:#D5D2D8;  
+        }
+}

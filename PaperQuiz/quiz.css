@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    top: -50vh;
+    display: block;
+    visibility: hidden;
+    position: relative;
+}
+
+.question {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 5vw;
+    padding: 1vw;
+    display: block;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked+label {
+    border-color: #EAE151;
+}
+
+label:hover {
+    border-color: #708090;
+}
+
+.title {
+    font-family: 'Staatliches', sans-serif;
+    display: block;
+    color: #67D3CB;
+    font-size: 3vw;
+    margin: 10vw;
+}
+
+/* Grid areas on the webpage styled to look like alternating tiles */
+.gridContainer {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: auto auto;
+}
+
+/* Styling for the title grid square */
+.titleItem {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #005852;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleItem div {
+    border-color: #67D3CB;
+    border-style: double;
+    border-width: 1vw;
+
+}
+
+.gridItem {
+    width: 50vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Bottom grid item where we return results */
+.resultGridItem {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+.resultItem {
+    margin: 10vw;
+    width: 60vw;
+    height: 30vw;
+    border-style: double;
+    border-width: 1vw;
+    border-color: #005852;
+    
+}
+
+.resultImage {
+    width: 14vw;
+    height: 14vw;
+    margin: 10px;
+    border: 5px solid #A29C9C;
+    border-style: solid;
+    display: flex;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+#imgBox {
+    display: flex;
+    float: right;
+}
+
+.result {
+    font-family: 'Staatliches', sans-serif;
+    display: block;
+    color: #005852;
+
+    font-size: 2vw;
+    margin: 4vw;
+    
+}
+
+.resultGridBox {
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: 100%;
+    grid-gap: 2vw;
+    
+}
+
+.resultGridBoxItems {
+    width: 50%;
+    height: 50%;
+    float: left;
+    display: block;
+}
+
+#resultsAppearance{
+    justify-items: center;
+}
+
+.gridAnswerContainer {
+    display: grid;
+    grid-gap: .1vw;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 25vw;
+    height: 25vw;
+    align-content: center;
+}
+
+.answer {
+    width: 14vw;
+    height: 14vw;
+    margin: 10px;
+    border: 5px solid #A29C9C;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.answer div {
+    border: none;
+}
+
+.lighter {
+    background-color: #67D3CB;
+    color: #005852;
+}
+
+.darker {
+    background-color: #005852;
+    color: #67D3CB;
+}
+
+/* Button styling */
+
+button {
+    font-size: 1vw;
+    padding: 1vw;
+    border: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.buttonLighter {
+    background-color: #67D3CB;
+    color: #005852;
+    border-color: #005852;
+    border-width: .4vw;
+    border-style: solid;
+}
+
+.buttonDarker {
+    background-color: #005852;
+    color: #67D3CB;
+    border-color: #67D3CB;
+    border-width: .4vw;
+    border-style: solid;
+}
+
+.buttonTitle {
+    margin: auto;
+    margin-top: -5vw;
+    margin-bottom: 5vw;
+    display: block;
+    transition: all 0.2s ease-in;
+}
+
+.buttonTitle:hover {
+    transform: scale(1.1);
+}
+
+.buttonNext {
+    padding: none;
+    display: block;
+    margin: auto;
+}
+
+.nextButtonGridContainer {
+    display: block;
+    position: absolute;
+    float: center;
+    z-index: 100;
+    left: 44.7vw;
+    top: 100vh;
+}
+
+.nextButtonGridItem {
+    margin-top: 85vh;
+    margin-bottom: 91.5vh;
+}
+
+.buttonNext {
+    transition: all 0.2s ease-in;
+    
+}
+
+.buttonNext:hover {
+    transform: scale(1.10);
+}
+
+#resultButton {
+    display: default;
+    background-color: #67D3CB;
+    color: #005852;
+    border-color: #005852;
+    border-width: .4vw;
+    border-style: solid;
+    transition: all 0.2s ease-in-out;
+}
+
+#resultButton:hover { 
+    transform: scale(1.2);
+    }
+
+
+
+p {
+    font-size: 1vw;
+    padding: 1vw;
+    font-family: 'Lato', sans-serif;
+}

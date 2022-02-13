@@ -1,0 +1,274 @@
+<html lang="en">
+
+<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="quiz.css" type="text/css" rel="stylesheet" ;>
+        <script type="text/javascript" src="quiz.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+        <!-- All the NEXT and RESULT buttons. Coded up here because they are layer on top of the rest of the webpage -->
+        <div class="nextButtonGridContainer">
+                <div class="nextButtonGridItem"><button onclick="location.href='#q2'" class="buttonNext buttonLighter">NEXT</button></div>
+                <div class="nextButtonGridItem"><button onclick="location.href='#q3'" class="buttonNext buttonLighter">NEXT</button></div>
+                <div class="nextButtonGridItem"><button onclick="location.href='#q4'" class="buttonNext buttonLighter">NEXT</button></div>
+                <div class="nextButtonGridItem"><button onclick="location.href='#q5'" class="buttonNext buttonLighter">NEXT</button></div>
+                <div class="nextButtonGridItem"><button onclick="location.href='#q6'" class="buttonNext buttonLighter">NEXT</button></div>
+                <div class="nextButtonGridItem"><button onclick="location.href='#q7'" class="buttonNext buttonLighter">NEXT</button></div>
+                <div class="nextButtonGridItem"><button onclick="location.href='#q8'" class="buttonNext buttonLighter">NEXT</button></div>
+                <div class="nextButtonGridItem"><button onclick="location.href='#q9'" class="buttonNext buttonLighter">NEXT</button></div>
+                <div class="nextButtonGridItem"><button onclick="location.href='#q10'" class="buttonNext buttonLighter">NEXT</button></div>
+                <div class="nextButtonGridItem"><button onclick="location.href='#rAnch'" class="buttonNext buttonLighter" id="resultButton">SHOW RESULTS!</button></div>
+        </div>
+        <!-- Start of our form to hold questions and answers -->
+        <form>
+                <!--gridContainer defines the entire grid layout of the page-->
+                <div class="gridContainer">
+                        <!-- Title elements -->
+                        <div class="titleItem">
+                                <div>
+                                        <h1 class="title">What Type of Paper Are You?</h1>
+                                        <button onclick="location.href='#q1'" class="buttonTitle buttonLighter">CLICK TO FIND OUT</button>
+                                </div>
+                        </div>
+                        <div class="gridItem darker">
+                                <a id="q1"></a><h1  class="question" >1. Which of these vacations would you enjoy the most?</h1>
+                        </div>
+                        <!--Questions start here followed by the answer in gridAnswerContainers. They repeat 10 times for the 10 questions-->
+                        <div class="gridItem lighter">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="vacations" value="notebook"
+                                                id="noteVac">
+                                        <label class="answer" for="noteVac"
+                                                style="background-image: url('images/beach.jpg')"></label>
+                                        <input class="answer" type="radio" name="vacations" value="wrapping"
+                                                id="wrapVac">
+                                        <label class="answer" for="wrapVac"
+                                                style="background-image: url('images/backpacking.jpg')"></label>
+                                        <input class="answer" type="radio" name="vacations" value="copy" id="copyVac">
+                                        <label class="answer" for="copyVac"
+                                                style="background-image: url('images/resort.jpg')"></label>
+                                        <input class="answer" type="radio" name="vacations" value="graph" id="graphVac">
+                                        <label class="answer" for="graphVac"
+                                                style="background-image: url('images/stayHome.jpg')"></label>
+                                </div>
+                        </div>
+                        <div class="gridItem lighter">
+                                <a id="q2"></a><h1 class="question">2. What is your favorite way to spend a free night?</h1>
+                        </div>
+                        <div class="gridItem darker">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="night" value="notebook" id="noteNight">
+                                        <label class="answer" for="noteNight"
+                                                style="background-image: url('images/book.jpg')"></label>
+                                        <input class="answer" type="radio" name="night" value="copy" id="copyNight">
+                                        <label class="answer" for="copyNight"
+                                                style="background-image: url('images/gameNight.jpg')"></label>
+                                        <input class="answer" type="radio" name="night" value="wrapping" id="wrapNight">
+                                        <label class="answer" for="wrapNight"
+                                                style="background-image: url('images/downTown.jpg')"></label>
+                                        <input class="answer" type="radio" name="night" value="graph" id="graphNight">
+                                        <label class="answer" for="graphNight"
+                                                style="background-image: url('images/haventHad.jpg')"></label>
+                                </div>
+                        </div>
+                        <div class="gridItem darker">
+                                <a id="q3"></a><h1 class="question">3. Pick a fruit.</h1>
+                        </div>
+                        <div class="gridItem lighter">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="fruit" value="notebook" id="noteFruit">
+                                        <label class="answer" for="noteFruit"
+                                                style="background-position: 50% 70%; background-image: url('images/apple.jpg')"></label>
+                                        <input class="answer" type="radio" name="fruit" value="copy" id="copyFruit">
+                                        <label class="answer" for="copyFruit"
+                                                style="background-position:35% 50%; background-image: url('images/orange.jpeg')"></label>
+                                        <input class="answer" type="radio" name="fruit" value="graph" id="graphFruit">
+                                        <label class="answer" for="graphFruit"
+                                                style="background-image: url('images/banana.png'); background-color: white; background-position: right top;"></label>
+                                        <input class="answer" type="radio" name="fruit" value="wrapping" id="wrapFruit">
+                                        <label class="answer" for="wrapFruit"
+                                                style="background-image: url('images/mango.jpg')"></label>
+                                </div>
+                        </div>
+                        <div class="gridItem lighter">
+                                <a id="q4"></a><h1 class="question">4. Pick a color.</h1>
+                        </div>
+                        <div class="gridItem darker">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="color" value="graph" id="graphColor">
+                                        <label class="answer" for="graphColor"
+                                                style="background-image: url('images/gray.jpg')"></label>
+                                        <input class="answer" type="radio" name="color" value="wrapping" id="wrapColor">
+                                        <label class="answer" for="wrapColor"
+                                                style="background-image: url('images/gold.jpg')"></label>
+                                        <input class="answer" type="radio" name="color" value="copy" id="copyColor">
+                                        <label class="answer" for="copyColor"
+                                                style="background-image: url('images/black.jpg')"></label>
+                                        <input class="answer" type="radio" name="color" value="notebook" id="noteColor">
+                                        <label class="answer" for="noteColor"
+                                                style="background-image: url('images/blue.jpg')"></label>
+                                </div>
+                        </div>
+                        <div class="gridItem darker">
+                                <a id="q5"></a><h1 class="question">5. How would you describe yourself socially?</h1>
+                        </div>
+                        <div class="gridItem lighter">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="social" value="wrapping" id="wrapSoc">
+                                        <label class="answer" for="wrapSoc"
+                                                style="background-image: url('images/lotsOfPeople.jpg')"></label>
+                                        <input class="answer" type="radio" name="social" value="notebook" id="noteSoc">
+                                        <label class="answer" for="noteSoc"
+                                                style="background-image: url('images/oneFriend.jpg')"></label>
+                                        <input class="answer" type="radio" name="social" value="copy" id="copySoc">
+                                        <label class="answer" for="copySoc"
+                                                style="background-image: url('images/smallGroup.jpg')"></label>
+                                        <input class="answer" type="radio" name="social" value="graph" id="graphSoc">
+                                        <label class="answer" for="graphSoc"
+                                                style="background-image: url('images/self.jpg')"></label>
+                                </div>
+                        </div>
+
+                        <div class="gridItem lighter">
+                                <a id="q6"></a><h1 class="question"> 6. Pick a spirit animal.</h1>
+                        </div>
+                        <div class="gridItem darker">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="spirit" value="copy" id="copySpir">
+                                        <label class="answer" for="copySpir"
+                                                style="background-image: url('images/dolphin.jpg')"></label>
+                                        <input class="answer" type="radio" name="spirit" value="notebook" id="noteSpir">
+                                        <label class="answer" for="noteSpir"
+                                                style="background-position: 100% 50%; background-image: url('images/Horse.jpg')"></label>
+                                        <input class="answer" type="radio" name="spirit" value="wrapping" id="wrapSpir">
+                                        <label class="answer" for="wrapSpir"
+                                                style="background-image: url('images/Lion.jpg')"></label>
+                                        <input class="answer" type="radio" name="spirit" value="graph" id="graphSpir">
+                                        <label class="answer" for="graphSpir"
+                                                style="background-image: url('images/Goldfish.jpg')"></label>
+                                </div>
+                        </div>
+
+                        <div class="gridItem darker">
+                                <a id="q7"></a><h1 class="question"> 7. Which of these animals would be your favorite pet?</h1>
+                        </div>
+                        <div class="gridItem lighter">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="pet" value="graph" id="graphPet">
+                                        <label class="answer" for="graphPet"
+                                                style="background-image: url('images/cat.jpeg')"></label>
+                                        <input class="answer" type="radio" name="pet" value="wrapping" id="wrapPet">
+                                        <label class="answer" for="wrapPet"
+                                                style="background-image: url('images/Snake.jpg')"></label>
+                                        <input class="answer" type="radio" name="pet" value="notebook" id="notePet">
+                                        <label class="answer" for="notePet"
+                                                style="background-image: url('images/Dog.jpg')"></label>
+                                        <input class="answer" type="radio" name="pet" value="copy" id="copyPet">
+                                        <label class="answer" for="copyPet"
+                                                style="background-image: url('images/Hamster.jpg')"></label>
+                                </div>
+                        </div>
+
+                        <div class="gridItem lighter">
+                                <a id="q8"></a><h1 class="question"> 8. Which of these holidays do you enjoy the most?</h1>
+                        </div>
+                        <div class="gridItem darker">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="holidays" value="graph" id="graphDay">
+                                        <label class="answer" for="graphDay"
+                                                style="background-image: url('images/birthday.jpg')"></label>
+                                        <input class="answer" type="radio" name="holidays" value="wrapping"
+                                                id="wrapDay">
+                                        <label class="answer" for="wrapDay"
+                                                style="background-image: url('images/newYears.jpg')"></label>
+                                        <input class="answer" type="radio" name="holidays" value="copy" id="copyDay">
+                                        <label class="answer" for="copyDay"
+                                                style="background-image: url('images/Valentines.jpg')"></label>
+                                        <input class="answer" type="radio" name="holidays" value="notebook"
+                                                id="noteDay">
+                                        <label class="answer" for="noteDay"
+                                                style="background-image: url('images/christmas.jpg')"></label>
+                                </div>
+                        </div>
+
+                        <div class="gridItem darker">
+                                <a id="q9"></a><h1 class="question"> 9. Will Smith</h1>
+                        </div>
+                        <div class="gridItem lighter">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="superpower" value="graph"
+                                                id="graphPower">
+                                        <label class="answer" for="graphPower"
+                                                style="background-image: url('images/willSmithArtboard 1.jpg')"></label>
+                                        <input class="answer" type="radio" name="superpower" value="copy"
+                                                id="copyPower">
+                                        <label class="answer" for="copyPower"
+                                                style="background-image: url('images/willSmithArtboard 4.jpg')"></label>
+                                        <input class="answer" type="radio" name="superpower" value="notebook"
+                                                id="notePower">
+                                        <label class="answer" for="notePower"
+                                                style="background-image: url('images/willSmithArtboard 5.jpg')"></label>
+                                        <input class="answer" type="radio" name="superpower" value="wrapping"
+                                                id="wrapPower">
+                                        <label class="answer" for="wrapPower"
+                                                style="background-image: url('images/willSmithArtboard 6.jpg')"></label>
+                                </div>
+                        </div>
+
+                        <div class="gridItem lighter">
+                                <a id="q10"></a><h1 class="question">10. )($&)(@^#%@()) </h1>
+                        </div>
+                        <div class="gridItem darker">
+                                <div class="gridAnswerContainer">
+                                        <input class="answer" type="radio" name="ten" value="copy" id="copyTen">
+                                        <label class="answer" for="copyTen"
+                                                style="background-image: url('images/copyGlitch.jpg')"></label>
+                                        <input class="answer" type="radio" name="ten" value="graph" id="graphTen">
+                                        <label class="answer" for="graphTen"
+                                                style="background-image: url('images/graphGlitch.jpg')"></label>
+                                        <input class="answer" type="radio" name="ten" value="notebook" id="noteTen">
+                                        <label class="answer" for="noteTen"
+                                                style="background-image: url('images/noteGlitch.jpg')"></label>
+                                        <input class="answer" type="radio" name="ten" value="wrapping" id="wrapTen">
+                                        <label class="answer" for="wrapTen"
+                                                style="background-image: url('images/wrapGlitch.jpg')"></label>
+                                </div>
+                        </div>
+                        <a id="rAnch"></a>
+                        <!--Questions end and the result square is defined below followed by 4 different result layout to display depending on user answers-->
+                        <div class="resultGridItem lighter" id="resultsAppearance">
+                                        <div class="resultItem">
+                                                <div class="resultGridBox">
+                                                        <div class="resultGridBoxItems">
+                                                                <h4 class="result" id="resultTitle">You are paper</h4>
+                                                        </div>
+
+                                                        <div class="resultGridBoxItems" id="resultImg" style="grid-row-start: 0; grid-row-end: 2; align-content: center; height: 100%; width: 50%;">
+                                                        </div>
+                                                        
+                                                        <div class="resultGridBoxItems" style="margin-top: -15vw;">
+                                                                <p id="resultDescription" style="font-family: 'Lato', sans-serif;"></p>
+                                                        </div>
+
+                                                        
+
+                                                
+                                                </div>
+                                        </div>
+        
+                                </div>
+                </div>
+
+        </form>
+
+</body>
+
+</html>

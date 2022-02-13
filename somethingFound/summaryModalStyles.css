@@ -1,0 +1,206 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  color: #D6D2D8;
+  background-color: #121014;
+  margin: auto;
+  padding: 20px;
+  border: 4px solid #D6D2D8;
+  border-radius: 10px;
+  width: 35%;
+}
+#mySummaryModal{
+    font-family: "press start 2p";
+}
+
+.tab{
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+  width: 33%;
+  display: block;
+  float: left;
+  text-align: center;
+  color: #4E4D4F;
+}
+
+.tab:hover{
+  color: #D6D2D8;
+}
+
+.tab.active{
+  border-bottom: 3px solid #D6D2D8;
+  color: #D6D2D8;
+}
+
+
+/*summary styles*/
+#sumTabContent, #shopTabContent, #petTabContent{
+  display: none;
+}
+
+#totalFood{
+  padding-bottom: 2.5vh;
+}
+
+.sumBar{
+  width: 75%;
+  display: inline-block;
+  clear: none;
+  margin: 0;
+  
+}
+
+#playerHunger, #petHunger{
+  display: block;
+  margin: auto;
+  clear: both;
+}
+
+.hungerButtonContainer{
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  clear: none;
+}
+
+.hungerButton{
+  display: block;
+  float: right;
+  width: 5vw;
+  padding: .8vh;
+  margin-top: 0;
+}
+
+#sellFood{
+  display: block;
+  margin: auto;
+  clear: both;
+}
+
+#sumMoney{
+  width: 75%;
+  display: block;
+  clear: none;
+  float: left;
+  margin: 0;
+  padding: .8vh 0;
+}
+
+
+#summaryText{
+  height: 10vh;
+}
+
+/* shop styles */
+#shopMoney{
+  clear: both;
+  display: block;
+  text-align: center;
+  padding-top: 2vh;
+  width: 100%;
+}
+
+#shopListings{
+  display: block;
+  clear: both;
+  width: 100%;
+  font-family: "press start 2p";
+  padding-top: 1vh;
+}
+
+.shopItem{
+  clear: both;
+  display: block;
+  width: 80%;
+  margin: auto;
+  height: 4vh;
+  padding: 1vh;
+}
+
+.shopItem .nameATK{
+  width: 60%;
+  display: block;
+  clear: none;
+  float: left;
+  margin: 0;
+  padding: 1vh;
+}
+.shopItem .costBuy{
+  width: 35%;
+  display: block;
+  clear: none;
+  float: right;
+  margin: 0;
+  text-align: right;
+}
+
+.itemCost{
+  display: inline-block;
+  clear: none;
+  width: 20%;
+  text-align: right;
+  margin: 0;
+  padding-right: 1vw;
+}
+
+.sumButton{
+  display: inline-block;
+  clear: none;
+  width: 25%;
+  margin: 0;
+  padding: .5vh 2vh;
+}
+
+
+/* pet styles */
+#petImage{
+  padding-top: 5vh;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+#petImage img{
+  display: block;
+  width: 6%;
+  margin: auto;
+}
+
+.petStatsLine{
+  padding-bottom: 1.2vh;
+}
+
+
+#endButton{
+  width: 20%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #D6D2D8;
+  text-decoration: none;
+  cursor: pointer;
+}
