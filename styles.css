@@ -149,11 +149,14 @@ header h1 span{
 	animation: 3s ease-out 0s 1 fadeInFromLeft;
 }
 .copyText {
-	width: 65%;
+	width: 85%;
 	margin: auto;
 	color: #2c3e50;
 	font-family: Martel;
 	font-size: 90%;
+}
+.copyText h1{
+	font-size: 1.3em;
 }
 
 #resumeText h3{
@@ -190,11 +193,13 @@ header h1 span{
 .workTitles{
 	width: 100%;
 	margin-top: .3em;
+	text-align: center;
 }
 
 .workTitles h1{
 	font-family: Martel;
 	font-weight: normal;
+	font-size: larger;
 	color: #2c3e50;
 	clear: both;
 }
@@ -396,6 +401,18 @@ footer .icons:hover{
 
 	.horzNav a.active{
 		font-weight: bold;
+	}
+	.workTitles{
+		width: 100%;
+		margin-top: .3em;
+		font-size: 1.5em;
+		text-align: left;
+	}
+	.copyText {
+		width: 65%;
+	}
+	.copyText h1{
+		font-size: 2em;
 	}
 	.tile{
 		width: 50%;

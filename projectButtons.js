@@ -1,14 +1,12 @@
 var tileLinks = [
-    "gatech.html",
+    "kc.html",
+    "cheers.html",
     "ati.html",
     "heritage.html",
-    "winshape.html",
+    "gatech.html", 
+    "thesis.html", 
     "venmo.html",
     "soarSouth.html",
-    "stride.html",
-    "thesis.html",
-    "inPrize.html",
-    "website.html"
 ];
 
 var previous = "'location.href= " + tileLinks[tileLinks.length - 1] + "'";
